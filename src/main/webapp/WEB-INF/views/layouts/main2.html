@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"></link>
+</head>
+<body>
+
+	
+	<div class="jumbotron">
+  <h1>Template #2</h1>
+  <p>...</p>
+  <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+</div>
+	
+	<!-- <div class="alert alert-success" role="alert">Configuracion de template completada con exito.</div> -->
+
+	<!-- <div th:raplace="layouts/header :: header">Header</div> -->
+	<div th:replace="${view} :: content">Content</div>
+	<!-- 	<div th:replace="fragments/footer :: footer">Footer</div> -->
+</body>
+</html>
